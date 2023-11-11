@@ -2,6 +2,7 @@
 members = [
     "bin",
     "integration",
+    "prover/prover_batch",
 ]
 
 [workspace.package]

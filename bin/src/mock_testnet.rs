@@ -19,9 +19,9 @@ async fn main() {
 
     log::info!("mock-testnet: BEGIN");
 
-    let setting = Setting::new();
+    let mut setting = Setting::new();
     log::info!("mock-testnet: setting = {setting:?}");
-
+    setting.l2geth_api_url = "http://127.0.0.1:8545".to_string();
     prepare_circuit_capacity_checker();
     log::info!("mock-testnet: prepared ccc");
 

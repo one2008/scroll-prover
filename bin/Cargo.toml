@@ -35,7 +35,7 @@ name = "mock_testnet"
 path = "src/mock_testnet.rs"
 
 [features]
-default = []
+default = ["inner-prove", "chunk-prove", "batch-prove"]
 inner-prove = ["prover/test"]
 chunk-prove = ["prover/test"]
 batch-prove = ["chunk-prove"]
